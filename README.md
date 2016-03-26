@@ -1,3 +1,3 @@
 # MovieApp
 
-Place your api_key in build.gradle.
+Place your API key in "MovieApp\app\build.gradle" file.
