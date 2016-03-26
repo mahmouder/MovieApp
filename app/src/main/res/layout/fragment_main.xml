@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/zero_margin"
+    android:paddingLeft="@dimen/zero_margin"
+    android:paddingRight="@dimen/zero_margin"
+    android:paddingTop="@dimen/zero_margin"
+    tools:context="com.example.android.movieapp.app.MainActivityFragment"
+    tools:showIn="@layout/activity_main"
+    android:background="#323232">
+
+    <Spinner
+        android:id="@+id/sort_order_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/sort_order"/>
+
+    <GridView
+        android:id="@+id/gridview_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="@dimen/activity_vertical_margin"
+        android:horizontalSpacing="@dimen/activity_horizontal_margin"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:columnWidth="132dp"
+        android:background="@android:color/background_dark">
+    </GridView>
+
+</LinearLayout>
