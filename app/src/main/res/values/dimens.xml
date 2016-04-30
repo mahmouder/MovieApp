@@ -5,7 +5,11 @@
     <dimen name="fab_margin">8dp</dimen>
     <dimen name="zero_margin">0dp</dimen>
     <!-- DetailActivity Text Size -->
-    <dimen name="text_size_title">24dp</dimen>
-    <dimen name="text_size_rating">16dp</dimen>
-    <dimen name="text_size_plot">14dp</dimen>
+    <dimen name="detail_text_size_title">30dp</dimen>
+    <dimen name="detail_text_size_rating">14dp</dimen>
+    <dimen name="detail_text_size_release">20dp</dimen>
+    <dimen name="detail_text_size_plot">14dp</dimen>
+    <dimen name="detail_textview_title_size">120dp</dimen>
+
+    <integer name="poster_image_size">185</integer>
 </resources>

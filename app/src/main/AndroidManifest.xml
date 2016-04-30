@@ -3,8 +3,11 @@
     package="com.example.android.movieapp.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
+        android:name="com.activeandroid.app.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,6 +32,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.movieapp.app.MainActivity" />
         </activity>
+
+        <meta-data android:name="AA_DB_NAME" android:value="FavoriteMovies.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.example.android.movieapp.app.models.Trailer,
+                           com.example.android.movieapp.app.models.Review,
+                           com.example.android.movieapp.app.models.Favorite"/>
+
     </application>
 
 </manifest>

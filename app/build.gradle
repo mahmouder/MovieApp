@@ -18,12 +18,15 @@ android {
         }
     }
     buildTypes.each {
-        it.buildConfigField 'String', 'TMDB_API_KEY', '"your_api_key_here"'
+        it.buildConfigField 'String', 'TMDB_API_KEY', '"a32d193dd30489ee3704200a073058c7"'
     }
 }
 
 repositories {
     mavenCentral()
+
+//  ActiveAndroid
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 dependencies {
@@ -32,4 +35,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.2.0'
     compile 'com.android.support:design:23.2.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
 }

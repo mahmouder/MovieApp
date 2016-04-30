@@ -14,6 +14,18 @@ public class DetailActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+//        Tablet UI
+        if (savedInstanceState == null) {
+
+            Bundle args = new Bundle();
+            args.putSerializable("movieDetails", getIntent().getSerializableExtra("movieDetails"));
+            DetailActivityFragment detailActivityFragment = new DetailActivityFragment();
+            detailActivityFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.movie_detail_container, detailActivityFragment).commit();
+        }
+
     }
 
 }
