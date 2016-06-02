@@ -1,7 +1,7 @@
 MovieApp
 
 Android application to help users discover popular and recent movies using themoviedb API.
-- Users can see movie details, watch movie trailers and reviews and they can 'favorite' movies and see them later in their favorite list.
+- Users can see movie details, watch movie trailers and read movie reviews. They can also 'favorite' movies and see them later in their favorite list.
 - The application has a tablet layout and a clean UI.
 
 
